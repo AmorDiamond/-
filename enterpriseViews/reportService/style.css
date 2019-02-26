@@ -1,0 +1,17 @@
+.report-con{
+  min-height: 100%;
+}
+.report-item{
+  line-height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+.report-item:last-child{
+  border: none;
+}
+.handle-btn{
+  float: right;
+  cursor: pointer;
+}
+.handle-btn .edit-icon{
+  margin-right: 5px;
+}

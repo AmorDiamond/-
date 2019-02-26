@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>修改审核公式</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="full-container">
+  <header>
+    <span class="sys-name">成都高新区企业报表平台</span>
+    <div class="hd-right">
+      <span class="welcome-text">欢迎您，XXXXXX有限公司！</span>
+      <span class="logout"><span class="icon-font logout-icon">&#xe606;</span>退出</span>
+    </div>
+  </header>
+  <div class="content-box">
+    <!--导航-->
+    <ul class="nav-list">
+      <li class="nav-item"><a href="../userManage/index.html"><span class="icon-font nav-icon">&#xe63f;</span>用户管理</a></li>
+      <li class="nav-item"><a href="../departmentManage/index.html"><span class="icon-font nav-icon">&#xe741;</span>部门管理</a></li>
+      <li class="nav-item">
+        <a href="../enterpriseManage/index.html"><span class="icon-font nav-icon">&#xe767;</span>企业管理</a>
+      </li>
+      <li class="nav-item"><a href="../tagManage/index.html"><span class="icon-font nav-icon">&#xe697;</span>标签管理</a></li>
+      <li class="nav-item"><a href="../reportManage/index.html"><span class="icon-font nav-icon">&#xe607;</span>报表管理</a></li>
+      <li class="nav-item active">
+        <a href="../dataReview/index.html"><span class="icon-font nav-icon">&#xe688;</span>数据审核</a>
+        <ul class="sub-nav">
+          <li class="nav-item active"><a href="../dataReview/index.html">审核公式</a></li>
+          <li class="nav-item"><a href="../审核进度监测/index.html">审核进度监测</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="../permissionManage/index.html"><span class="icon-font nav-icon permission-nav-icon">&#xe60d;</span>权限管理</a></li>
+      <li class="nav-item"><a href="../rolesManage/index.html"><span class="icon-font nav-icon">&#xe663;</span>角色管理</a></li>
+    </ul>
+    <!--主体内容-->
+    <div class="right-content">
+      <div class="content">
+        <div class="detail-content">
+          <div class="localtion-tag"><a href="../dataReview/index.html"><span class="detail-back icon-font">&#xe656;</span></a>审核公式> 修改审核公式</div>
+          <div class="title">修改审核公式</div>
+          <div class="detail-con col-md-6 col-md-offset-3">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">公式编码</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="公式编码" value="A0002">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">逻辑公式</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="逻辑公式" value="QD03QD01">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">条件类型</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="">
+                    <option value="">制度性</option>
+                    <option value="">自定义</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">出错提示信息</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="3" placeholder="出错提示信息">留学归国人员数应小于从业人员期末数</textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">备注说明</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="3" placeholder="备注说明">制度规定的留学人员审核公式</textarea>
+                </div>
+              </div>
+              <div class="form-group t-c">
+                <button class="btn btn-primary" type="submit">确定</button>
+                <button class="btn btn-default" type="submit">取消</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

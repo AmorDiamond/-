@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>企业报表查询</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="full-container">
+  <header>
+    <span class="sys-name">成都高新区企业报表平台</span>
+    <div class="hd-right">
+      <span class="welcome-text">欢迎您，XXXXXX有限公司！</span>
+      <span class="logout"><span class="icon-font logout-icon">&#xe606;</span>退出</span>
+    </div>
+  </header>
+  <div class="content-box">
+    <!--导航-->
+    <ul class="nav-list">
+      <li class="nav-item"><a href="../userManage/index.html"><span class="icon-font nav-icon">&#xe63f;</span>用户管理</a></li>
+      <li class="nav-item"><a href="../departmentManage/index.html"><span class="icon-font nav-icon">&#xe741;</span>部门管理</a></li>
+      <li class="nav-item">
+        <a href="../enterpriseManage/index.html"><span class="icon-font nav-icon">&#xe767;</span>企业管理</a>
+      </li>
+      <!--<li class="nav-item"><a href="../tagManage/index.html"><span class="icon-font nav-icon">&#xe697;</span>标签管理</a></li>-->
+      <li class="nav-item active">
+        <a href="../reportManage/index.html"><span class="icon-font nav-icon">&#xe607;</span>报表管理</a>
+        <ul class="sub-nav">
+          <li class="nav-item active"><a href="../reportManage/index.html">报表查询</a></li>
+          <li class="nav-item"><a href="../报表汇总/index.html">报表汇总</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="../dataReview/index.html"><span class="icon-font nav-icon">&#xe688;</span>数据审核</a></li>
+      <li class="nav-item"><a href="../permissionManage/index.html"><span class="icon-font nav-icon permission-nav-icon">&#xe60d;</span>权限管理</a></li>
+      <li class="nav-item"><a href="../rolesManage/index.html"><span class="icon-font nav-icon">&#xe663;</span>角色管理</a></li>
+    </ul>
+    <!--主体内容-->
+    <div class="right-content">
+      <div class="content">
+        <div class="list-content">
+          <div class="localtion-tag"><a href="../reportManage/index.html"><span class="detail-back icon-font">&#xe656;</span></a>报表管理> 科技部火炬统计调查</div>
+          <div class="list-filter">
+            <form class="form-inline bottom-line">
+              <div class="form-group">
+                <label>科技部火炬统计调查</label>
+                <input class="form-control" value="2019-02" />
+              </div>
+            </form>
+            <form class="form-inline">
+              <div class="form-group">
+                <label>所属部门</label>
+                <select class="form-control">
+                  <option>所有</option>
+                  <option>其他</option>
+                </select>
+              </div>
+              <div class="form-group m-l-20">
+                <label>报送状态</label>
+                <select class="form-control">
+                  <option>所有</option>
+                  <option>其他</option>
+                </select>
+              </div>
+              <div class="form-group m-l-20">
+                <label>审核状态</label>
+                <select class="form-control">
+                  <option>所有</option>
+                  <option>其他</option>
+                </select>
+              </div>
+              <div class="form-group m-l-20">
+                <label>报表月份</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group long-input-filter m-l-20">
+                <input type="text" class="form-control" id="exampleInputEmail2" placeholder="请输入企业名称/统一社会信用代码">
+              </div>
+              <button class="btn btn-primary"><span class="glyphicon icon-font">&#xe600;</span>搜索</button>
+              <button class="btn btn-default">重置</button>
+              <button class="btn btn-default fr">导出</button>
+            </form>
+          </div>
+          <div class="list-con">
+            <table class="table table-hover custom-table">
+              <thead>
+              <tr>
+                <th><input type="checkbox" class="all-check">全选</th>
+                <th>序号</th>
+                <th>企业名称</th>
+                <th>统一社会信用代码</th>
+                <th>所属部门</th>
+                <th>报送状态</th>
+                <th>报表月份</th>
+                <th>审核状态</th>
+                <th>操作</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="t-l"><input type="checkbox" class="check-box"></td>
+                <td>1</td>
+                <td>英特尔产品(成都)有限公司</td>
+                <td>91510100752809830T</td>
+                <td>技术部</td>
+                <td>已报送</td>
+                <td>2019年2月</td>
+                <td>正常</td>
+                <td>
+                  <a href="../新增修改标签/index.html"><span class="table-view">查看详情</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-l"><input type="checkbox" class="check-box"></td>
+                <td>2</td>
+                <td>英特尔产品(成都)有限公司</td>
+                <td>91510100752809830T</td>
+                <td>技术部</td>
+                <td>已报送</td>
+                <td>2019年2月</td>
+                <td>正常</td>
+                <td>
+                  <a href="../新增修改标签/index.html"><span class="table-view">查看详情</span></a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var allCheck = document.querySelector('.all-check');
+  var list = document.querySelectorAll('.check-box');
+  allCheck.onchange = function (e) {
+    if (this.checked) {
+      list.forEach(function (item) {
+        item.checked = true
+      })
+    } else {
+      list.forEach(function (item) {
+        item.checked = false
+      })
+    }
+  }
+  list.forEach(function(item) {
+    item.onchange = function () {
+      var all = true;
+      list.forEach(function(listItem) {
+        if (!listItem.checked) {
+          all = false
+        }
+      });
+      allCheck.checked = all;
+    }
+  })
+</script>
+</body>
+</html>
