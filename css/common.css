@@ -103,6 +103,11 @@ header .logout-icon{
   cursor: pointer;
   font-size: 14px;
 }
+.nav-list .nav-item a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .nav-list .nav-item:hover,.nav-list .nav-item.active{
   background-color: #fff;
   border-color: #108ee9;
@@ -201,4 +206,12 @@ header .logout-icon{
 }
 .localtion-tag{
   margin-bottom: 20px;
+}
+.custom-table td a:hover{
+  color: #108ee9;
+}
+.full-page{
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
 }
